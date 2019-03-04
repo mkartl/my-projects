@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	return 0;#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+	/*--- yazılımın bir sayı üretip bizim tahmin ettiğimiz bölüm ---*/
+	while(dogruluk==0) /* dogru tahmin gelene kadar while döngüsü ile programın sürekliliği sağlanıyor */
+	{
+	
+    srand(time(NULL));
+    int sayipc = rand() % 8854 + 1023; /* rakamları farklı rastgele 4 basamaklı bir sayi üretiliyor */
+    int dogruluk=0; /* dogruluk tahminin dogrulugunu kontrol eden değişkendir */
+    int tahmin;  /* kullanıcıdan alınılan tahmin  */
+    
+    int birler, onlar, yüzler, birler;
+		/* sayımızı basamaklara ayırıyoruz */
+	birler=sayipc%10;
+	onlar=sayipc%100;
+	yüzler=sayipc%1000;
+	binler=sayipc%10000;
+
+    printf("tahmin de bulunabilirsin:\n "); 
+	 
+        scanf("%d", &tahmin);
+    	/* kullanıcıdan gelen tahmini basamaklarına ayırıyoruz */
+        int birlert=tahmin%10;
+		int onlart=tahmin%100;
+		int yüzlert=tahmin%1000;
+		int binlert=tahmin%10000;
+        
+        if (tahmin == sayipc) /* tutulan sayı ve tahmin karşılaştırması yapılıyor */
+		{
+            printf("Tebrikler dogru tahminde bulundunuz:\n");
+            dogruluk=1; /* dogru tahmin geldi döngüden cıkılabilir.*/
+        }
+		/* basamaklara göre kullanıcıya ipucu veriliyor */
+        if(birler1==birler)
+			{printf("tebrikler +1\n");}
+		else
+			{printf("maalesef -1\n");}
+		if(onlar1==onlar)
+			{printf("tebrikler +1\n");}
+		else
+			{printf("maalesef -1");}
+		if(yüzler1==yüzler)
+			{printf("tebrikler +1\n");}
+		else
+			{printf("maalesef -1\n");}
+		if(binler1==binler)
+			{printf("tebrikler +1\n");}
+		else
+			{printf("maalesef -1");}
+    
+    
+  /*--- kullanıcının sayı tutup yazılımın tahmin ettiği bölüm ---*/
+    
+    printf("4 basamakli bir sayi tut tahmin de bulunuyorum:\n");
+    int ipucu; /* ipucu tahminleri icin kullanılacak deger */
+    
+      
+	srand(time(NULL)); /* yazılım 4 basamaklı rakamları farklı tahminde bulunuyor */
+    int tahminim = rand() % 8854 + 1023;
+    printf("%d", tahminim);
+    
+    printf("eger tahmin ettigim sayi dogru ise 1'e bas")
+    scanf("%d", &dogruluk); /* kullanıcıdan tahminin durumu hakkında bilgi isteniyor */
+    
+        
+        if (dogruluk==1) 
+		{
+            printf("Tebrikler dogru tahminde bulundunuz:\n");
+            dogruluk=1;
+        }
+
+        else 
+        {
+        	printf("hatali oldugum tahminler icin bana yardimci olurmusun?:\n")
+        	printf("basamaklari ve sayilari dogru tahmin ettiysem +1 yanlis tahmin ettiysem -1 ver:\n")
+        	scanf("%d", &ipucu);
+		}
+}
+    
+    printf("oynadigin icin tesekkur ederim:");
+
+    return 0;
+}
